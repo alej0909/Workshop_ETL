@@ -1,4 +1,4 @@
-# Workshop_ETL
+# ETL Workshop
 
 Presented by:
 - Manuel Alejandro Gruezo [manuel.gruezo@uao.edu.co](mailto:manuel.gruezo@uao.edu.co)
@@ -44,6 +44,7 @@ The dataset contains various features, including:
 - **Python** <img src="https://cdn-icons-png.flaticon.com/128/3098/3098090.png" alt="Python" width="21px" height="21px">
 - **Jupyter Notebooks** <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/883px-Jupyter_logo.svg.png" alt="Jupyter" width="21px" height="21px">
 - **PostgreSQL** <img src="https://cdn-icons-png.flaticon.com/128/5968/5968342.png" alt="Postgres" width="21px" height="21px">
+- **Power BI** <img src="https://1000logos.net/wp-content/uploads/2022/08/Microsoft-Power-BI-Logo.png" alt="PowerBI" width="30px" height="21px">
 - **SQLAlchemy** <img src="https://quintagroup.com/cms/python/images/sqlalchemy-logo.png/@@images/eca35254-a2db-47a8-850b-2678f7f8bc09.png" alt="SQLAlchemy" width="50px" height="21px">
 
 ### Repository Organization
@@ -56,6 +57,7 @@ The dataset contains various features, including:
 
 1. Install Python: [Python Downloads](https://www.python.org/downloads/)
 2. Install PostgreSQL: [PostgreSQL Downloads](https://www.postgresql.org/download/)
+3. Install Power BI: [Install Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) 
 
 ## Environment Variables
 
@@ -128,3 +130,55 @@ To run this project, you will need to add the following environment variables to
 
 You are now ready to start working on this workshop.
 
+## Creating a Dashboard in Power BI from PostgreSQL
+
+Follow these steps to connect Power BI to a PostgreSQL database and create your dashboard.
+
+### Step 1: Obtain Data
+
+Ensure you have the dataset and that it is already loaded into a PostgreSQL database.
+
+### Step 2: Open Power BI Desktop
+
+1. **Launch Power BI Desktop:** Open Power BI Desktop on your computer.
+
+### Step 3: Connect to PostgreSQL
+
+1. **Go to Home Tab:**
+   - Click on the **"Home"** tab in the top menu.
+
+2. **Get Data:**
+   - Click on the **"Get Data"** button on the Home ribbon.
+
+3. **Select Data Source:**
+   - In the "Get Data" window, select **"More…"** to open the full list of data sources.
+   - Scroll down and choose **"PostgreSQL database"** from the list.
+   - Click **"Connect"**.
+
+4. **Enter Server Details:**
+   - In the **"PostgreSQL database"** window, enter the **Server** and **Database** details:
+     - **Server:** Your PostgreSQL server address (e.g., `localhost` or `your_host`).
+     - **Database:** The name of your PostgreSQL database.
+
+5. **Verify Connection:**
+   - Power BI will attempt to connect to your PostgreSQL database. If successful, you will see a list of available tables.
+
+### Step 4: Select Tables
+
+1. **Select the Desired Tables:**
+   - Choose the tables from your PostgreSQL database that you wish to include in your Power BI dashboard.
+   - Click **"Load"** to import the data into Power BI.
+
+2. **Preview and Transform Data (Optional):**
+   - If you need to make any transformations or adjustments to the data before loading it into Power BI, click **"Transform Data"** instead of **"Load"**. This will open the Power Query Editor where you can perform data cleaning and transformation tasks.
+
+### Step 5: Build Your Dashboard
+
+1. **Create Visualizations:**
+   - Once your data is loaded into Power BI, you can start creating visualizations. Drag and drop fields from your tables onto the report canvas to create charts, tables, and other visual elements.
+   - Customize the layout and design of your dashboard. Add filters, slicers, and interactive elements to make your dashboard informative and user-friendly.
+
+2. **Save and Publish:**
+   - Save your Power BI file and, if desired, publish it to the Power BI service for sharing and collaboration.
+
+Congratulations! You have successfully created a dashboard in Power
